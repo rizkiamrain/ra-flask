@@ -1,0 +1,37 @@
+{% extends "main_layout.html" %}
+{% block content %}
+  <title>Set Variabel</title>
+<body>
+  {% set nama = "Mohamad Rizki Amrain" %}
+  {% set gender = "Pria" %}
+  <div>
+    <hr>
+      <h2>Set Variabel pada jinja</h2>
+      <pre>
+          nama            = {{ nama }}
+          jenis Kelamanin = {{ gender }}
+      </pre>
+  </div>
+  <hr>
+  <div>
+      {% for hari in hari %}
+          {% if hari == "Senin" %}
+              <p style="color:darkblue; font-size: x-large;">Hari {{ hari }} cepat berangkat ke sekolah, jangan
+              sampai lambat mengikuti upacara!</p>
+          {% elif hari =="Rabu" %}
+              <p style="color: cyan; font-size: larger;">Hari {{ hari }} adalah hari yang sibuk, saya beri nama 
+              hari sibuk nasional.</p>
+          {% elif hari == "Minggu" %}
+              <p style="color: green; font-size: x-large;">Hari {{ hari }}, yee..waktunya berlibur!</p>
+          {% else %}
+              <p style="color: brown; font-size: large;">Aktifitasku hari {{ hari }} lumayan padat.</p>
+          {% endif %}
+      {% endfor %}
+  </div>
+  <hr>
+  <div>
+      Seperti itulah kegiatan saya, sampai jumpa. <br><br><br> <b><i><u>{{ nama }}</u></i></b>
+  </div>
+</body>
+
+{% endblock %}

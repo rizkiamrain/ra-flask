@@ -1,0 +1,28 @@
+{% extends "main_layout.html" %}
+{% block content %}
+  <title>Templating Lanjut</title>
+<body>
+  <div>
+    <hr>
+    <h2>Looping</h2>
+    <hr>
+    <ul>
+        {% for data in items %}
+            <li><h3>{{ data }}</h3></li>
+        {% endfor %}
+    </ul>
+  </div>
+  <hr>
+  <div>
+      <h2>Conditional Statement</h2>
+      {% if suhu > 25 %}
+          <p>Suhu ruangan {{ suhu }} <sup>0</sup>C, panas. Nyalakan AC dan atur suhunya!</p>
+      {% elif suhu < 16 %}
+          <p>Suhu ruangan {{ suhu }} <sup>0</sup>C, dingin. Naikkan suhu ac diatas {{ suhu }} <sup>0</sup>C</p>
+      {% else %}
+          <p>Suhu ruangan {{ suhu }} <sup>0</sup>C, normal.</p>
+      {% endif %}
+  </div>
+</body>
+
+{% endblock %}

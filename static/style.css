@@ -1,0 +1,85 @@
+body {
+    color: #333333;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+h3, h4, h5, h6 {
+color: #444444;
+}
+
+.site-header .navbar-nav .nav-link {
+color: #616161;
+}
+
+.site-header .navbar-nav .nav-link:hover {
+color: #505050;
+}
+
+.site-header .navbar-nav .nav-link.active {
+font-weight: 500;
+}
+
+
+
+.article-title {
+color: #444444;
+}
+
+a.article-title:hover {
+color: #428bca;
+text-decoration: none;
+}
+
+.article-content {
+white-space: pre-line;
+}
+
+
+
+.article-metadata a:hover {
+color: #333;
+text-decoration: none;
+}
+
+.article-svg {
+width: 25px;
+height: 25px;
+vertical-align: middle;
+}
+
+.account-heading {
+font-size: 2.5rem;
+}
+
+h1 {
+    height: 60vh;
+    background-image: url('../img/banner.jpg');
+    background-size: cover;
+    position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner h1:after {
+    display:'';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #333;
+    z-index: 1;
+}
+.banner h1 {
+    color: #000000;
+    z-index: 1;
+    padding: 20px 25px;
+    border:3px solid #000000;
+
+}
+section {
+    padding:50px 0;
+}
